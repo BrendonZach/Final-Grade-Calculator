@@ -51,6 +51,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Calculate"/>
                                 <connections>
+                                    <action selector="Calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Kg-hZ-P2l"/>
                                     <action selector="caculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RB3-5D-Wfs"/>
                                 </connections>
                             </button>
@@ -83,6 +84,12 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
                     </view>
+                    <connections>
+                        <outlet property="currentGrade" destination="qAO-ez-wMH" id="dV1-ub-9s3"/>
+                        <outlet property="desiredGrade" destination="JvM-fj-nwe" id="0oK-re-ytw"/>
+                        <outlet property="finalAnswer" destination="gWp-a2-HML" id="V3a-Pc-di8"/>
+                        <outlet property="finalGrade" destination="1vB-XU-TKx" id="xA5-4y-8dH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
