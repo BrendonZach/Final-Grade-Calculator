@@ -15,25 +15,25 @@ class ViewController: UIViewController
     
     @IBOutlet weak var desiredGrade: UITextField!
     
-
-    @IBOutlet weak var finalTestAmount: UITextField!
+    @IBOutlet weak var finalExamWeight: UITextField!
+    
+ 
     
     @IBAction func Calculate(_ sender: Any)
     {
         var myGrade = currentGrade.text ?? ""
         var expectedGrade = desiredGrade.text ?? ""
-        var testWeight = finalTestAmount.text ?? ""
+        var testWeight = finalExamWeight.text ?? ""
         var currentGradeint = Double(myGrade) ?? 0.0
         var desiredGradeint = Double(expectedGrade) ?? 0.0
         var finalTestAmountint = Double(testWeight) ?? 0.0
-        var F = desiredGradeint - ((1 - finalTestAmountint) * currentGradeint / finalTestAmountint)
-        
+      var F = (desiredGradeint - ((1 - finalTestAmountint/100) * currentGradeint)) / (finalTestAmountint/100)
+
         finalAnswer.text = "\(F)"
                                 
-        print(currentGrade)
-        print(desiredGrade)
-        print(finalTestAmount)
+      
         print(F)
+        
         
         
         

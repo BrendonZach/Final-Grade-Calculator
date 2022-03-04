@@ -79,12 +79,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1vB-XU-TKx">
-                                <rect key="frame" x="297" y="431" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPinkColor"/>
@@ -93,7 +87,7 @@
                         <outlet property="currentGrade" destination="qAO-ez-wMH" id="dV1-ub-9s3"/>
                         <outlet property="desiredGrade" destination="JvM-fj-nwe" id="0oK-re-ytw"/>
                         <outlet property="finalAnswer" destination="gWp-a2-HML" id="V3a-Pc-di8"/>
-                        <outlet property="finalTestAmount" destination="wi4-Vd-RTJ" id="9UP-zZ-sAv"/>
+                        <outlet property="finalExamWeight" destination="wi4-Vd-RTJ" id="sBI-kC-hJp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
